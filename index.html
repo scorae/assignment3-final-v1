@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scott Raetsen Website</title>
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jomolhari&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Jomolhari&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <style>
+      body {
+        background-image: url("Background.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: #1e0d54;
+      }
+
+      .title {
+        text-align: center;
+        margin: 12%;
+      }
+
+      h1 {
+        font-family: "Jomolhari", serif;
+        font-size: 50px;
+        color: white;
+        letter-spacing: 7px;
+      }
+
+      h2 {
+        font-family: "Gowun Dodum", sans-serif;
+        font-size: 16px;
+        color: white;
+        letter-spacing: 5px;
+      }
+
+      h3 {
+        font-family: "Gowun Dodum", sans-serif;
+        font-size: 20px;
+        color: white;
+        letter-spacing: 5px;
+      }
+
+      p {
+        font-family: "Gowun Dodum", sans-serif;
+        font-size: 16px;
+        color: white;
+        letter-spacing: 1px;
+        padding: 5px;
+        text-align: justify;
+      }
+
+      .toTopButton {
+        text-align: center;
+        padding: 15px;
+      }
+
+      .toTopButton a {
+        font-family: "Jomolhari", serif;
+        color: #3610AC;
+        font-size: 16px;
+        letter-spacing: 5px;
+        text-decoration: none;
+      }
+
+      a {
+        text-decoration: underline;
+        color: white;
+        font-family: "Gowun Dodum", sans-serif;
+      }
+
+      a:hover {
+        color: yellow;
+      }
+
+      .navbar {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
+
+      .navbar li {
+        display: inline;
+      }
+
+      .navbar a {
+        text-decoration: none;
+        font-size: 16px;
+        letter-spacing: 3px;
+        display: inline-block;
+        padding: 20px;
+        padding-left: 7%;
+        padding-right: 7%;
+      }
+
+      .about {
+        padding-top: 20%;
+        padding-left: 50px;
+        padding-right: 50px;
+      }
+
+      .photography {
+        padding: 50px;
+      }
+
+      img {
+        max-width: 60%;
+        height: auto;
+        border-radius: 1%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .about img {
+        float: right;
+        margin-left: 25px;
+      }
+
+      hr {
+        margin-top: 12%;
+        margin-left: 20px;
+        margin-right: 20px;
+        border: 2px solid #250F6A;
+      }
+      
+      .video {
+        padding: 50px;
+      }
+
+      /* Code copied from: https://www.w3schools.com/w3css/w3css_slideshow.asp
+      Author: w3schools.com
+      Name: Automatic slideshow
+      Description: Displays an automatic (animated) slideshow.
+      Date retrieved: Sept. 26, 2019 
+      */
+
+      /* Copied code starts */
+      /* Slideshow container */
+      * {
+        box-sizing: border-box;
+      }
+
+      .mySlides {
+        display: none;
+      }
+
+      .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+      }
+
+      /* The dots/bullets/indicators */
+      .dot {
+        height: 8px;
+        width: 8px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+
+      .active {
+        background-color: #717171;
+      }
+
+      /* Fading animation */
+      .fade {
+        animation-name: fade;
+        animation-duration: 3s;
+      }
+
+      @keyframes fade {
+        from {
+          opacity: .4
+        }
+
+        to {
+          opacity: 1
+        }
+      }
+
+      /* On smaller screens, decrease text size */
+      @media only screen and (max-width: 300px) {
+        .text {
+          font-size: 11px
+        }
+      }
+
+      /* Copied code ends */
+    </style>
+
+    <!-- HTML -->
+
+  </head>
+  <body>
+
+    <!-- HOMEPAGE -->
+
+    <ul id="home" class="navbar">
+      <li><a href="#abt">ABOUT</a></li>
+      <li><a href="#photo">PHOTO</a></li>
+      <li><a href="#video">VIDEO</a></li>
+      <li><a href="#contact">CONTACT</a></li>
+    </ul>
+
+    <div class="title">
+      <h1>Scott Raetsen</h1>
+      <h2>DIGITAL ARTIST</h2>
+    </div>
+
+    <!-- ABOUT -->
+
+    <div class="about">
+      <img src="toronto.jpg" alt="Toronto Skyline at Night" width="500" height="350">
+      <h3 id="abt">
+        ABOUT
+      </h3>
+      <p>
+        My name is Scott and I am a Toronto-based Digital Artist. I am currently studying Global Business and Digital Arts at the University of Waterloo. I have extensive experience in <a href="#photo">photography</a>, <a href="#video">videography</a> and design. I am skilled in many Adobe Creative Cloud programs including Premiere Pro, Photoshop, Illustrator and inDesign. Currently I have aspiratons to add After Effects to my repetoire of skills.
+      </p>
+    </div>
+
+    <hr>
+
+    <!-- PHOTO -->
+
+    <div class="toTopButton">
+      <a href="#home">Scott Raetsen</a>
+    </div>
+
+    <div class="photography">
+      <h3 id="photo">
+        PHOTOGRAPHY
+      </h3>
+      <p>
+        I have been passionate about photography for around 10 years now. In this time I have familiarized myself with and become comfortable with many of the key principles of photography. You can find more of my photography <a href="https://www.pixoto.com/scorae" target="_blank">here</a>.
+      </p>
+    </div>
+
+    <!-- Code copied from: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_auto
+Author: w3schools.com
+Name: Automatic slideshow
+Description: Plays an automatic slideshow.
+Date retrieved: Dec 3, 2023
+-->
+
+    <!-- Copied code starts -->
+
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <img src="firetruck.jpg" style="width:100%" alt="Blurry Firetruck">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="ads.jpg" style="width:100%" alt="Posters in an urban area">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="mountain.jpg" style="width:100%" alt="The view looking down from a mountain">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="nyc.jpg" style="width:100%" alt="A busy street in New York">
+      </div>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+
+    <script>
+      let slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 8000); // Change image every 8 seconds
+      }
+    </script>
+
+    <!-- Copied code ends -->
+
+    <hr>
+
+    <!-- VIDEO -->
+
+    <div class="toTopButton">
+      <a href="#home">Scott Raetsen</a>
+    </div>
+
+    <div class="video">
+      <h3 id="video">
+        VIDEO
+      </h3>
+      <p>
+        I have been passionate about photography for around 10 years now. In this time I have familiarized myself with and become comfortable with many of the key principles of photography.
+      </p>
+    </div>
+  </body>
+
+</html>
